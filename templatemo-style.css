@@ -38,10 +38,6 @@ a:focus {
   color: #3496d8;
 }
 
-.font-big {
-  font-size: 1.25rem;
-}
-
 .btn-primary {
   color: white;
   background-color: #3496d8;
@@ -65,24 +61,14 @@ a:focus {
   transition: all 0.3s ease;
 }
 
-.navbar.scroll {
-  background-color: white;
-  border-bottom: 1px solid #e9ecef;
-}
-
 .navbar-brand {
   color: white;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-.navbar-brand:hover,
-.navbar.scroll .navbar-brand:hover {
+.navbar-brand:hover {
   color: #3496d8;
-}
-
-.navbar.scroll .navbar-brand {
-  color: #8f8f8f;
 }
 
 .nav-item {
@@ -93,12 +79,6 @@ a:focus {
   color: white;
 }
 
-.navbar.scroll .nav-link {
-  color: #8f8f8f;
-}
-
-.navbar.scroll .nav-link:hover,
-.navbar.scroll .nav-link.current,
 .nav-link:hover {
   color: #3496d8;
 }
@@ -113,15 +93,6 @@ a:focus {
   color: white;
   padding-top: 6px;
 }
-
-.navbar.scroll .navbar-toggler {
-  border: 1px solid #8f8f8f;
-}
-
-.navbar.scroll .navbar-toggler-icon {
-  color: #8f8f8f;
-}
-
 
 /* Hero */
 
@@ -175,20 +146,9 @@ a:focus {
   text-shadow: 2px 2px 2px #333;
 }
 
-.intro-next {
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  right: 0;
-}
-
 @media (max-height: 480px) {
   .hero-text-container-inner {
     margin-top: -40px;
-  }
-
-  .intro-next {
-    bottom: 20px;
   }
 }
 
@@ -234,7 +194,7 @@ a:focus {
   padding-bottom: 120px;
 }
 
-figure.effect-honey {
+.effect-honey {
   background: #4d4a48;
   max-width: 220px;
   box-sizing: content-box;
@@ -242,18 +202,18 @@ figure.effect-honey {
   margin-bottom: 7vw;
 }
 
-figure.effect-honey img {
+.effect-honey img {
   opacity: 0.9;
   transition: opacity 0.35s;
 }
 
-figure.effect-honey:hover img {
+.effect-honey:hover img {
   opacity: 0.7;
   filter: blur(5px) grayscale();
   transition: all 0.75s;
 }
 
-figure figcaption {
+figcaption {
   color: #35a3f7;
   position: absolute;
   max-width: 220px;
@@ -264,7 +224,7 @@ figure figcaption {
   text-transform: uppercase;
 }
 
-figure.effect-honey:hover figcaption {
+.effect-honey:hover figcaption {
   transition: all 1s;
   display: block;
   opacity: 1;
@@ -274,10 +234,7 @@ figure.effect-honey:hover figcaption {
 
 #contact {
   color: white;
-  /* background-image: url(../img/the-town-bg-01.jpg); */
   background-color: #0a0a0aa2;
-  background-position: center;
-  background-repeat: no-repeat;
   max-height: 550px;
   position: relative;
   padding-bottom: 50px;
@@ -300,22 +257,6 @@ figure.effect-honey:hover figcaption {
   margin-bottom: 75px;
 }
 
-.contact-item-link {
-  display: flex;
-  align-items: center;
-}
-
-.contact-item-link i,
-.contact-item-link span {
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.contact-item-link:hover i,
-.contact-item-link:hover span {
-  color: #3496d8;
-}
-
 .input {
   padding: 8px 25px;
   border-radius: 3px;
@@ -325,9 +266,8 @@ figure.effect-honey:hover figcaption {
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
 .btn-submit {
@@ -340,16 +280,6 @@ figure.effect-honey:hover figcaption {
   left: 0;
   right: 0;
   padding: 0 15px;
-}
-
-.footer-link {
-  color: white;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: #3496d8;
-  text-decoration: none;
 }
 
 p {
@@ -372,11 +302,11 @@ p {
     max-width: 1275px;
   }
 
-  .container-gallery {
+  .gallery-container {
     max-width: 1290px;
   }
 
-  .container-contact {
+  .contact-container {
     max-width: 1063px;
   }
 }
@@ -431,13 +361,6 @@ p {
     margin-right: auto;
   }
 
-  .slick-dots li {
-    margin: 0 8px;
-  }
-
-  .gallery-item {
-    margin: 0;
-  }
 }
 
 @media (max-width: 420px) {
